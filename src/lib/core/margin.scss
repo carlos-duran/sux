@@ -1,0 +1,8 @@
+
+$margin-positions: (
+  't': map-get($positions, 'top'),
+);
+
+.m {
+  @extend %margin;
+}

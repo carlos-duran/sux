@@ -1,0 +1,12 @@
+// @import 'normalize';
+
+@import 'variables';
+// @import 'functions';
+// @import 'mixins';
+// @import 'extends/all';
+// @import 'core/all';
+
+body {
+  background-color: $muted;
+  color: $info;
+}

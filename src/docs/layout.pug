@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Simple UX
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    - var min = prod ? '.min' : ''
+    link(rel='stylesheet' href=`/css/sux${min}.css`)
+    link(rel='stylesheet' href=`/css/docs${min}.css`)
+  body
+    include includes/header.pug
+    block content
+    include includes/footer.pug

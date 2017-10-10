@@ -1,0 +1,93 @@
+$btn-soft-hover: rgba($white, .15);
+$btn-soft-active: rgba($white, .3);
+$btn-press-hover: rgba($black, .15);
+$btn-press-active: rgba($black, .3);
+$disabled: lighten($gray, 30%);
+$text-disabled: lighten($black, 30%);
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 16px;
+  height: auto;
+  line-height: 1.2;
+  padding: 8px 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.default {
+    background-color: darken($white, 10%);
+    color: lighten($black, 10%);
+
+    &:hover,
+    &:focus {
+      background-color: darken($white, 15%);
+    }
+
+    &:active {
+      background-color: darken($white, 20%);
+    }
+  }
+
+  // Sizes
+  &.btn-sm {
+    font-size: 12px;
+    padding: 6px 9px;
+  }
+
+  &.btn-lg {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+
+  // Modes
+  &.soft {
+    &:hover,
+    &:focus {
+      background-image: linear-gradient($btn-soft-hover, $btn-soft-hover);
+    }
+
+    &:active {
+      background-image: linear-gradient($btn-soft-active, $btn-soft-active);
+    }
+  }
+
+  &.press {
+    &:hover,
+    &:focus {
+      background-image: linear-gradient($btn-press-hover, $btn-press-hover);
+    }
+
+    &:active {
+      background-image: linear-gradient($btn-press-active, $btn-press-active);
+    }
+  }
+
+  @each $key, $value in $colors {
+    &.btn-fill-#{$key} {
+      @extend %text-#{$key};
+      @extend %border-#{$key};
+      // background-color: $white;
+
+      &:hover {
+        @extend %#{$key};
+      }
+    }
+  }
+
+  &:disabled,
+  &[disabled],
+  &.disabled {
+    background: $disabled;
+    border: 1px solid $disabled;
+    color: $text-disabled;
+    pointer-events: none;
+  }
+
+}

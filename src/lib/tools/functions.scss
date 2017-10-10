@@ -1,0 +1,8 @@
+
+@function set-text-color($bgcolor) {
+  @if (lightness($bgcolor) > 60) {
+    @return map-get($colors, 'black');
+  } @else {
+    @return map-get($colors, 'white');
+  }
+}

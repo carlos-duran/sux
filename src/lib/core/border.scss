@@ -1,0 +1,18 @@
+.border-rounded {
+  border-radius: 3px;
+}
+
+.border-circle {
+  border-radius: 50%;
+}
+
+@each $color, $value in $colors {
+  %border-#{$color} {
+    border: 1px solid $value;
+  }
+
+  .border-#{$color},
+  .border-#{$color}-hover:hover {
+    @extend %border-#{$color};
+  }
+}
