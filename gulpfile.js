@@ -41,7 +41,10 @@ const docs = {
 
 gulp.task('lib:scss', () => {
   return gulp.src(lib.scss.src)
-    .pipe(sass().on('error', sass.logError).on('error', notify.onError('Scss error')))
+    .pipe(sass()
+      .on('error', sass.logError)
+      .on('error', notify.onError('Scss error'))
+    )
     .pipe(autoprefixer())
     .pipe(gulp.dest(lib.scss.dest))
     .pipe(gulp.dest(docs.scss.dest)) // docs
@@ -85,7 +88,10 @@ gulp.task('docs:pug:watch', ['docs:pug:dev'], () => {
 
 gulp.task('docs:scss', () => {
   return gulp.src(docs.scss.src)
-    .pipe(sass().on('error', sass.logError).on('error', notify.onError('Scss error')))
+    .pipe(sass()
+      .on('error', sass.logError)
+      .on('error', notify.onError('Scss error'))
+    )
     .pipe(autoprefixer())
     .pipe(gulp.dest(docs.scss.dest))
     .pipe(browserSync.stream())

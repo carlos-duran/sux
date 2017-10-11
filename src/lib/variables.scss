@@ -1,29 +1,12 @@
-// Colors
-$white: #fff;
-$black: #333;
-$muted: #ddd;
-$gray: #999;
-$primary: #009688;
-$success: #3fa744;
-$danger: #f13123;
-$warning: #ff9800;
-$info: #03a9f4;
 
 $colors: (
-  'white': $white,
-  'black': $black,
-  'muted': $muted,
-  'gray': $gray,
-  'primary': $primary,
-  'success': $success,
-  'danger': $danger,
-  'warning': $warning,
-  'info': $info
+  'white': #fff,
+  'muted': #eee,
+  'gray': #868e96,
+  'black': #343a40,
+  'primary': #009688,
+  'info': #03a9f4,
+  'success': #28a745,
+  'warning': #ffc107,
+  'danger': #dc3545
 );
-
-// Sizes
-$unit: 4px;
-$size-names: 'small' 'medium' 'large' 'xlarge';
-
-// Positions
-$positions: 'top' 'right' 'bottom' 'left';

@@ -1,0 +1,13 @@
+// Size
+$unit: 5px;
+
+// Colors
+$white: map-get($colors, 'white');
+$black: map-get($colors, 'black');
+$muted: map-get($colors, 'muted');
+$gray: map-get($colors, 'gray');
+
+$size-names: 'small' 'medium' 'large' 'xlarge';
+
+// Positions
+$positions: 'top' 'right' 'bottom' 'left';
