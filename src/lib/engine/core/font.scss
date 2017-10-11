@@ -6,8 +6,23 @@
 }
 
 // Font-sizes
-@for $i from 1 through 12 {
-  %font-size-#{$i} {
-    font-size: $i * $unit;
+$font-sizes: (
+  'small': 14px,
+  'medium': 16px,
+  'large': 18px,
+  'xlarge': 21px,
+  'xxlarge': 24px,
+);
+
+@each $size, $value in $font-sizes {
+  %font-size-#{$size} {
+    font-size: $value;
+  }
+}
+
+@for $i from 6 through 1 {
+  %heading-#{7-$i} {
+    @extend %margin-vertical;
+    font-size: 17px + ($i * ($i + 1)) / 2;
   }
 }

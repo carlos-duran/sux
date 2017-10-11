@@ -1,15 +1,24 @@
-* {
-  -webkit-tap-highlight-color: transparent;
+html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-html {
-  font-size: 100%; }
+* {
+  -webkit-tap-highlight-color: transparent; }
+  *, *::before, *::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit; }
 
 body {
   font-family: Roboto, Arial, sans-serif;
-  line-height: 1.2;
+  font-size: 16px;
   margin: 0; }
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #343a40; }
+
+a {
+  color: inherit; }
 
 button {
   background-color: #fff;
@@ -27,26 +36,38 @@ button {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
-body {
+.txt-sm {
+  font-size: 14px; }
+
+body, .txt-md {
   font-size: 16px; }
 
-h6, .h6 {
-  font-size: 20px; }
+.txt-lg {
+  font-size: 18px; }
 
-h5, .h5 {
+.txt-xl {
+  font-size: 21px; }
+
+.txt-xxl {
   font-size: 24px; }
 
-h4, .h4 {
-  font-size: 28px; }
-
-h3, .h3 {
-  font-size: 32px; }
+h1, .h1 {
+  font-size: 38px; }
 
 h2, .h2 {
-  font-size: 36px; }
+  font-size: 32px; }
 
-h1, .h1 {
-  font-size: 40px; }
+h3, .h3 {
+  font-size: 27px; }
+
+h4, .h4 {
+  font-size: 23px; }
+
+h5, .h5 {
+  font-size: 20px; }
+
+h6, .h6 {
+  font-size: 18px; }
 
 .mt-sm {
   margin-top: 8px; }
@@ -123,7 +144,7 @@ h1, .h1 {
 .m-xxl {
   margin: 80px; }
 
-h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6 {
+p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-bottom: 16px;
   margin-top: 16px; }
 
@@ -202,7 +223,7 @@ h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6 {
 .bg-black, .black {
   background-color: #343a40; }
 
-.txt-black, .white, .muted {
+body, .txt-black, .white, .muted {
   color: #343a40; }
 
 .border-black {

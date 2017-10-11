@@ -2,8 +2,13 @@ $text-shortand: 'txt';
 
 @for $i from 1 through 6 {
   .h#{$i} {
-    @extend %font-size-#{11-$i};
-    @extend %margin-vertical;
+    @extend %heading-#{$i};
+  }
+}
+
+@each $size, $s in $sizes {
+  .#{$text-shortand}-#{$s} {
+    @extend %font-size-#{$size};
   }
 }
 
