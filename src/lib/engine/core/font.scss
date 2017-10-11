@@ -5,15 +5,6 @@
   }
 }
 
-// Font-sizes
-$font-sizes: (
-  'small': 14px,
-  'medium': 16px,
-  'large': 18px,
-  'xlarge': 21px,
-  'xxlarge': 24px,
-);
-
 @each $size, $value in $font-sizes {
   %font-size-#{$size} {
     font-size: $value;

@@ -6,7 +6,9 @@ $text-shortand: 'txt';
   }
 }
 
-@each $size, $s in $sizes {
+@each $size, $v in $font-sizes {
+  $s: map-get($sizes, $size);
+
   .#{$text-shortand}-#{$s} {
     @extend %font-size-#{$size};
   }

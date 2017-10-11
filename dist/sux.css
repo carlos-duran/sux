@@ -10,8 +10,7 @@ html {
 
 body {
   font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  margin: 0; }
+  font-size: 16px; }
 
 hr {
   border: 0;
@@ -43,12 +42,9 @@ body, .txt-md {
   font-size: 16px; }
 
 .txt-lg {
-  font-size: 18px; }
+  font-size: 20px; }
 
 .txt-xl {
-  font-size: 21px; }
-
-.txt-xxl {
   font-size: 24px; }
 
 h1, .h1 {
@@ -144,7 +140,7 @@ h6, .h6 {
 .m-xxl {
   margin: 80px; }
 
-p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+hr, p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-bottom: 16px;
   margin-top: 16px; }
 
