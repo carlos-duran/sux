@@ -1,7 +1,17 @@
 
-$margin-positions: (
-  't': map-get($positions, 'top'),
-);
+$margin-shortand: 'm';
+
+@each $size, $s in $sizes {
+  @each $position, $pos in $positions {
+    .#{$margin-shortand}#{$pos}-#{$s} {
+      @extend %margin-#{$position}-#{$size};
+    }
+  }
+
+  .#{$margin-shortand}-#{$s} {
+    @extend %margin-#{$size};
+  }
+}
 
 .m {
   @extend %margin;

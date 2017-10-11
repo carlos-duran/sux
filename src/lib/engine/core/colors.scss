@@ -1,5 +1,22 @@
 @each $key, $value in $colors {
+  %background-#{$key} {
+    background-color: $value;
+  }
+
+  %text-#{$key} {
+    color: $value;
+  }
+
+  %border-#{$key} {
+    border: 1px solid $value;
+  }
+
   %#{$key} {
-    @include background($value);
+    @extend %background-#{$key};
+    @if (lightness($value) > 60) {
+      @extend %text-black;
+    } @else {
+      @extend %text-white;
+    }
   }
 }

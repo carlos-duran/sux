@@ -1,0 +1,36 @@
+$margin-base: $unit * 4; // 20px
+$margin-sizes: (
+  'small': .5,
+  'medium': 1,
+  'large': 2,
+  'xlarge': 3.5,
+  'xxlarge': 5,
+);
+
+// Margins
+@each $size, $value in $margin-sizes {
+  @each $pos, $v in $positions {
+    %margin-#{$pos}-#{$size} {
+      margin-#{$pos}: $margin-base * $value;
+    }
+  }
+
+  %margin-#{$size} {
+    margin: $margin-base * $value;
+  }
+}
+
+@each $pos, $v in $positions {
+  %margin-#{$pos} {
+    @extend %margin-#{$pos}-medium;
+  }
+}
+
+%margin {
+  @extend %margin-medium;
+}
+
+%margin-vertical {
+  margin-bottom: $margin-base;
+  margin-top: $margin-base;
+}

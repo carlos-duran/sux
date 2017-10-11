@@ -1,14 +1,13 @@
 
-$font-sizes: (
-  'light': 300,
-  'regular': 400,
-  'semi-bold': 600,
-  'bold': 700,
-  'extra-bold': 800
-);
-
-@each $key, $value in $font-sizes {
-  %font-#{$key} {
+@each $key, $value in $font-weights {
+  %font-weight-#{$key} {
     font-weight: $value;
+  }
+}
+
+// Font-sizes
+@for $i from 1 through 12 {
+  %font-size-#{$i} {
+    font-size: $i * $unit;
   }
 }

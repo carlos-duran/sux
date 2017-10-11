@@ -22,7 +22,7 @@ const lib = {
 
 const docs = {
   pug: {
-    src: 'src/docs/views/**/*.pug',
+    src: 'src/docs/views/**/!(layout).pug',
     dest: 'docs',
     watch: 'src/docs/**/*.pug'
   },

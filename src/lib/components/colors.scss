@@ -1,11 +1,6 @@
-@each $key, $value in $colors {
-  .#{$key} {
-    @extend %#{$key};
-  }
 
-  .#{$key}-hover {
-    &:hover {
-      @extend %#{$key};
-    }
+@each $color, $value in $colors {
+  .#{$color} {
+    @extend %#{$color};
   }
 }

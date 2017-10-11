@@ -1,3 +1,4 @@
+
 .border-rounded {
   border-radius: 3px;
 }
@@ -7,12 +8,7 @@
 }
 
 @each $color, $value in $colors {
-  %border-#{$color} {
-    border: 1px solid $value;
-  }
-
-  .border-#{$color},
-  .border-#{$color}-hover:hover {
+  .border-#{$color} {
     @extend %border-#{$color};
   }
 }

@@ -1,13 +1,38 @@
-// Size
-$unit: 5px;
+// Unit
+$unit: 4px;
 
-// Colors
-$white: map-get($colors, 'white');
-$black: map-get($colors, 'black');
-$muted: map-get($colors, 'muted');
-$gray: map-get($colors, 'gray');
+// Base colors
+$base-colors: (
+  'white': $white,
+  'muted': $muted,
+  'gray': $gray,
+  'black': $black
+);
 
-$size-names: 'small' 'medium' 'large' 'xlarge';
+$colors: map-merge($colors, $base-colors);
+
+// Sizes
+$sizes: (
+  'small': 'sm',
+  'medium': 'md',
+  'large': 'lg',
+  'xlarge': 'xl',
+  'xxlarge': 'xxl'
+);
 
 // Positions
-$positions: 'top' 'right' 'bottom' 'left';
+$positions: (
+  'top': 't',
+  'right': 'r',
+  'bottom': 'b',
+  'left': 'l'
+);
+
+// Font weights
+$font-weights: (
+  'light': 300,
+  'regular': 400,
+  'semi-bold': 600,
+  'bold': 700,
+  'extra-bold': 800
+);
