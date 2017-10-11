@@ -1,44 +1,56 @@
 .flex {
+  @extend %flex;
+  align-items: flex-start;
   display: flex;
 }
 
 .flex-left {
+  @extend %flex-left;
   justify-content: flex-start;
 }
 
-.flex-right {
-  justify-content: flex-end;
-}
-
 .flex-center {
+  @extend %flex-center;
   justify-content: center;
 }
 
-.flex-around {
-  justify-content: space-around;
+.flex-right {
+  @extend %flex-right;
+  justify-content: flex-end;
 }
 
 .flex-between {
+  @extend %flex-between;
   justify-content: space-between;
 }
 
+.flex-around {
+  @extend %flex-around;
+  justify-content: space-around;
+}
+
 .flex-top {
+  @extend %flex-top;
   align-items: flex-start;
 }
 
 .flex-middle {
+  @extend %flex-middle;
   align-items: center;
 }
 
 .flex-bottom {
+  @extend %flex-bottom;
   align-items: flex-end;
 }
 
 .flex-stretch {
+  @extend %flex-stretch;
   align-items: stretch;
 }
 
 .flex-baseline {
+  @extend %flex-baseline;
   align-items: baseline;
 }
 

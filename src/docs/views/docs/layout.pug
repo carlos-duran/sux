@@ -1,11 +1,12 @@
 extends ../../layout
 
 block content
-  ul.sidebar
-    li: a(href="buttons.html") Buttons
-    li: a(href="text.html") Text
-      
-  .container
-    h1= title
-    hr
-    block main
+  .flex
+    div.mr-xxl
+      ul.sidebar
+        li: a(href="buttons.html") Buttons
+        li: a(href="text.html") Text
+    div    
+      .container
+        h1= title
+        block main
