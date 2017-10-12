@@ -9,37 +9,37 @@ $text-shortand: 'txt';
 @each $size, $v in $font-sizes {
   $s: map-get($size-names, $size);
 
-  .text-#{$s} {
+  .t-#{$s} {
     @extend %font-size-#{$size};
   }
 }
 
 @each $color, $value in $colors {
-  .text-#{$color} {
+  .t-#{$color} {
     @extend %text-#{$color};
   }
 }
 
-.text-center {
+.t-center {
   @extend %text-center;
 }
 
-.text-right {
+.t-right {
   @extend %text-right;
 }
 
-.text-left {
+.t-left {
   @extend %text-left;
 }
 
-.text-top {
+.t-top {
   @extend %text-top;
 }
 
-.text-bottom {
+.t-bottom {
   @extend %text-bottom;
 }
 
-.text-middle {
+.t-middle {
   @extend %text-middle;
 }

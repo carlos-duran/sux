@@ -1,18 +1,39 @@
 
 $margin-shortand: 'm';
 
-@each $size, $s in $size-names {
+$margin-size-names: map-merge($size-names, $other-size-names);
+
+@each $size, $s in $margin-size-names {
+
   @each $position, $pos in $positions {
-    .#{$margin-shortand}#{$pos}-#{$s} {
+    .m#{$pos}-#{$s} {
       @extend %margin-#{$position}-#{$size};
     }
   }
 
-  .#{$margin-shortand}-#{$s} {
+  @each $position, $pos in $other-positions {
+    .m#{$pos}-#{$s} {
+      @extend %margin-#{$position}-#{$size};
+    }
+  }
+
+  .m-#{$s} {
     @extend %margin-#{$size};
+  }
+}
+
+@each $position, $pos in $positions {
+  .m#{$pos} {
+    @extend %margin-#{$position};
   }
 }
 
 .m {
   @extend %margin;
+}
+
+@each $position, $pos in $other-positions {
+  .m-#{$pos} {
+    @extend %margin-#{$position};
+  }
 }

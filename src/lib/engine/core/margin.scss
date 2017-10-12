@@ -5,18 +5,38 @@ $margin-sizes: (
   'large': 2,
   'xlarge': 3.5,
   'xxlarge': 5,
+  'remove': 0,
+  'auto': 'auto'
 );
 
 // Margins
 @each $size, $value in $margin-sizes {
+  $margin-value: 0;
+
+  @if $size == 'auto' {
+    $margin-value: $value;
+  } @else {
+    $margin-value: $margin-base * $value;
+  }
+
   @each $pos, $v in $positions {
     %margin-#{$pos}-#{$size} {
-      margin-#{$pos}: $margin-base * $value;
+      margin-#{$pos}: $margin-value;
     }
   }
 
   %margin-#{$size} {
-    margin: $margin-base * $value;
+    margin: $margin-value;
+  }
+
+  %margin-horizontal-#{$size} {
+    margin-left: $margin-value;
+    margin-right: $margin-value;
+  }
+
+  %margin-vertical-#{$size} {
+    margin-bottom: $margin-value;
+    margin-top: $margin-value;
   }
 }
 
@@ -31,6 +51,9 @@ $margin-sizes: (
 }
 
 %margin-vertical {
-  margin-bottom: $margin-base;
-  margin-top: $margin-base;
+  @extend %margin-vertical-medium;
+}
+
+%margin-horizontal {
+  @extend %margin-vertical-medium;
 }
