@@ -1,0 +1,53 @@
+// Max
+.max-w-1,
+.max-w-1-1 {
+  @extend %max-width-1;
+}
+
+// Widths
+@each $size, $value in $sizes {
+  $s: map-get($size-names, $size);
+
+  .w-#{$s} {
+    @extend %width-#{$size};
+  }
+}
+
+// Percentajes
+.w-1,
+.w-1-1 {
+  @extend %width-1;
+}
+
+.w-1-2 {
+  @extend %width-1-2;
+}
+
+.w-1-3 {
+  @extend %width-1-3;
+}
+
+.w-2-3 {
+  @extend %width-2-3;
+}
+
+.w-1-4 {
+  @extend %width-1-4;
+}
+
+.w-3-4 {
+  @extend %width-3-4;
+}
+
+@for $i from 1 through 4 {
+  .w-#{$i}-5 {
+    @extend %width-#{$i}-5;
+  }
+}
+
+// Childs
+@for $i from 1 through 4 {
+  .child-w-#{$i}-5 {
+    @extend %width-#{$i}-5;
+  }
+}

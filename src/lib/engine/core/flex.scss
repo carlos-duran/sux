@@ -3,6 +3,10 @@
   display: flex;
 }
 
+%flex-column {
+  flex-direction: column;
+}
+
 %flex-left {
   justify-content: flex-start;
 }
@@ -41,4 +45,10 @@
 
 %flex-baseline {
   align-items: baseline;
+}
+
+@for $i from 1 through 3 {
+  %flex-#{$i} {
+    flex: $i;
+  }
 }

@@ -7,20 +7,39 @@ $text-shortand: 'txt';
 }
 
 @each $size, $v in $font-sizes {
-  $s: map-get($sizes, $size);
+  $s: map-get($size-names, $size);
 
-  .#{$text-shortand}-#{$s} {
+  .text-#{$s} {
     @extend %font-size-#{$size};
   }
 }
 
-.#{$text-shortand}-center {
-  text-align: center;
-}
-
-
 @each $color, $value in $colors {
-  .#{$text-shortand}-#{$color} {
+  .text-#{$color} {
     @extend %text-#{$color};
   }
+}
+
+.text-center {
+  @extend %text-center;
+}
+
+.text-right {
+  @extend %text-right;
+}
+
+.text-left {
+  @extend %text-left;
+}
+
+.text-top {
+  @extend %text-top;
+}
+
+.text-bottom {
+  @extend %text-bottom;
+}
+
+.text-middle {
+  @extend %text-middle;
 }

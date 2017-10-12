@@ -2,6 +2,10 @@
   @extend %flex;
 }
 
+.flex-column {
+  @extend %flex-column;
+}
+
 .flex-left {
   @extend %flex-left;
 }
@@ -42,16 +46,10 @@
   @extend %flex-baseline;
 }
 
-.flex-1 {
-  flex: 1;
-}
-
-.flex-2 {
-  flex: 2;
-}
-
-.flex-3 {
-  flex: 3;
+@for $i from 1 through 3 {
+  .flex-#{$i} {
+    @extend %flex-#{$i};
+  }
 }
 
 .flex-first {

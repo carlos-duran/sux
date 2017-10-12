@@ -4,3 +4,29 @@
   margin-right: auto;
   max-width: 960px;
 }
+
+.h-1-1,
+.h-1 {
+  @extend %height-1-1;
+}
+
+.h-v {
+  @extend %height-viewport;
+}
+
+.min-h-v {
+  @extend %min-height-viewport;
+}
+
+.max-h-v {
+  @extend %max-height-viewport;
+}
+
+
+@each $size, $value in $sizes {
+  $s: map-get($size-names, $size);
+
+  .h-#{$s} {
+    @extend %height-#{$size};
+  }
+}

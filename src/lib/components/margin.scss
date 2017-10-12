@@ -1,7 +1,7 @@
 
 $margin-shortand: 'm';
 
-@each $size, $s in $sizes {
+@each $size, $s in $size-names {
   @each $position, $pos in $positions {
     .#{$margin-shortand}#{$pos}-#{$s} {
       @extend %margin-#{$position}-#{$size};
