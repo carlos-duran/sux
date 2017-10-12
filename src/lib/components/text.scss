@@ -20,6 +20,12 @@ $text-shortand: 'txt';
   }
 }
 
+@each $key, $value in $font-weights {
+  .t-#{$key} {
+    @extend %font-weight-#{$key};
+  }
+}
+
 .t-center {
   @extend %text-center;
 }

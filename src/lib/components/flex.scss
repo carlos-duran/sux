@@ -6,6 +6,10 @@
   @extend %flex-column;
 }
 
+.flex-wrap {
+  @extend %flex-wrap;
+}
+
 .flex-left {
   @extend %flex-left;
 }

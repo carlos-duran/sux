@@ -1,0 +1,54 @@
+$padding-base: $unit * 4; // 20px
+$padding-sizes: (
+  'remove': 0,
+  'small': .5,
+  'medium': 1,
+  'large': 2,
+  'xlarge': 3.5,
+  'xxlarge': 5
+);
+
+// Margins
+@each $size, $value in $padding-sizes {
+  $padding-value: 0;
+
+  $padding-value: $padding-base * $value;
+
+  @each $pos, $v in $positions {
+    %padding-#{$pos}-#{$size} {
+      padding-#{$pos}: $padding-value;
+    }
+  }
+
+  %padding-#{$size} {
+    padding: $padding-value;
+  }
+
+  %padding-horizontal-#{$size} {
+    padding-left: $padding-value;
+    padding-right: $padding-value;
+  }
+
+  %padding-vertical-#{$size} {
+    padding-bottom: $padding-value;
+    padding-top: $padding-value;
+  }
+}
+
+@each $pos, $v in $positions {
+  %padding-#{$pos} {
+    @extend %padding-#{$pos}-medium;
+  }
+}
+
+%padding {
+  @extend %padding-medium;
+}
+
+%padding-vertical {
+  @extend %padding-vertical-medium;
+}
+
+%padding-horizontal {
+  @extend %padding-vertical-medium;
+}

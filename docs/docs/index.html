@@ -8,27 +8,33 @@
     <link rel="stylesheet" href="/css/sux.css">
     <link rel="stylesheet" href="/css/docs.css">
   </head>
-  <body>
-    <ul class="t-primary">
-      <li><a href="/">Inicio</a></li>
-      <li><a href="/docs">Documentación</a></li>
-    </ul>
-    <hr>
-    <div class="flex">
-      <div class="mr-xxl">
-        <ul class="sidebar">
-          <li><a href="buttons.html">Buttons</a></li>
-          <li><a href="text.html">Text</a></li>
-        </ul>
-      </div>
-      <div>   
-        <div class="container">
-          <h1>Docs</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+  <body class="flex flex-column min-h-v">
+    <div class="w-1">
+      <ul class="t-primary">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/docs">Documentación</a></li>
+      </ul>
+      <hr>
+    </div>
+    <div class="flex-1">
+      <div class="flex flex-wrap">
+        <div class="p">
+          <ul class="w-sm">
+            <li><a href="buttons.html">Buttons</a></li>
+            <li><a href="text.html">Text</a></li>
+          </ul>
+        </div>
+        <div class="p flex-1">
+          <div class="w-1">
+            <h1>Docs</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+          </div>
         </div>
       </div>
     </div>
-    <hr>
-    <p class="t-center">&copy; Simple UX</p>
+    <div class="w-1">
+      <hr>
+      <p class="t-center t-bold">&copy; Simple UX</p>
+    </div>
   </body>
 </html>

@@ -1,0 +1,40 @@
+
+$padding-shortand: 'p';
+
+$padding-size-names: map-merge($size-names, $other-size-names);
+
+@each $size, $s in $padding-size-names {
+  @if $size != 'auto' {
+    @each $position, $pos in $positions {
+      .p#{$pos}-#{$s} {
+        @extend %padding-#{$position}-#{$size};
+      }
+    }
+
+    @each $position, $pos in $other-positions {
+      .p#{$pos}-#{$s} {
+        @extend %padding-#{$position}-#{$size};
+      }
+    }
+
+    .p-#{$s} {
+      @extend %padding-#{$size};
+    }
+  }
+}
+
+@each $position, $pos in $positions {
+  .p#{$pos} {
+    @extend %padding-#{$position};
+  }
+}
+
+.p {
+  @extend %padding;
+}
+
+@each $position, $pos in $other-positions {
+  .p-#{$pos} {
+    @extend %padding-#{$position};
+  }
+}

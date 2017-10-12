@@ -53,6 +53,10 @@ button {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 .flex-left {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -135,8 +139,20 @@ button {
 .t-middle {
   vertical-align: middle; }
 
-h1, h2, h3, h4, h5, h6 {
+.t-light {
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6, .t-regular {
   font-weight: 400; }
+
+.t-semi-bold {
+  font-weight: 600; }
+
+.t-bold {
+  font-weight: 700; }
+
+.t-extra-bold {
+  font-weight: 800; }
 
 .t-sm {
   font-size: 14px; }
@@ -400,6 +416,144 @@ h6, .h6 {
 .my-auto {
   margin-bottom: "auto";
   margin-top: "auto"; }
+
+.pt-rm {
+  padding-top: 0px; }
+
+.pr-rm {
+  padding-right: 0px; }
+
+.pb-rm {
+  padding-bottom: 0px; }
+
+.pl-rm {
+  padding-left: 0px; }
+
+.p-rm {
+  padding: 0px; }
+
+.px-rm {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.py-rm {
+  padding-bottom: 0px;
+  padding-top: 0px; }
+
+.pt-sm {
+  padding-top: 8px; }
+
+.pr-sm {
+  padding-right: 8px; }
+
+.pb-sm {
+  padding-bottom: 8px; }
+
+.pl-sm {
+  padding-left: 8px; }
+
+.p-sm {
+  padding: 8px; }
+
+.px-sm {
+  padding-left: 8px;
+  padding-right: 8px; }
+
+.py-sm {
+  padding-bottom: 8px;
+  padding-top: 8px; }
+
+.pt-md, .pt {
+  padding-top: 16px; }
+
+.pr-md, .pr {
+  padding-right: 16px; }
+
+.pb-md, .pb {
+  padding-bottom: 16px; }
+
+.pl-md, .pl {
+  padding-left: 16px; }
+
+.p-md, .p {
+  padding: 16px; }
+
+.px-md {
+  padding-left: 16px;
+  padding-right: 16px; }
+
+.py-md, .p-y, .p-x {
+  padding-bottom: 16px;
+  padding-top: 16px; }
+
+.pt-lg {
+  padding-top: 32px; }
+
+.pr-lg {
+  padding-right: 32px; }
+
+.pb-lg {
+  padding-bottom: 32px; }
+
+.pl-lg {
+  padding-left: 32px; }
+
+.p-lg {
+  padding: 32px; }
+
+.px-lg {
+  padding-left: 32px;
+  padding-right: 32px; }
+
+.py-lg {
+  padding-bottom: 32px;
+  padding-top: 32px; }
+
+.pt-xl {
+  padding-top: 56px; }
+
+.pr-xl {
+  padding-right: 56px; }
+
+.pb-xl {
+  padding-bottom: 56px; }
+
+.pl-xl {
+  padding-left: 56px; }
+
+.p-xl {
+  padding: 56px; }
+
+.px-xl {
+  padding-left: 56px;
+  padding-right: 56px; }
+
+.py-xl {
+  padding-bottom: 56px;
+  padding-top: 56px; }
+
+.pt-xxl {
+  padding-top: 80px; }
+
+.pr-xxl {
+  padding-right: 80px; }
+
+.pb-xxl {
+  padding-bottom: 80px; }
+
+.pl-xxl {
+  padding-left: 80px; }
+
+.p-xxl {
+  padding: 80px; }
+
+.px-xxl {
+  padding-left: 80px;
+  padding-right: 80px; }
+
+.py-xxl {
+  padding-bottom: 80px;
+  padding-top: 80px; }
 
 .bg-primary, .primary {
   background-color: #009688; }
