@@ -23,6 +23,11 @@ button {
   background-color: #fff;
   border: 0; }
 
+.menu {
+  list-style: none; }
+  .menu li a {
+    text-decoration: none; }
+
 .flex-first {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -31,7 +36,7 @@ button {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 960px; }
+  max-width: 1000px; }
 
 .border-rounded {
   border-radius: 3px; }
@@ -275,7 +280,7 @@ h6, .h6 {
   margin-left: 8px;
   margin-right: 8px; }
 
-.my-sm {
+.menu li, .my-sm {
   margin-bottom: 8px;
   margin-top: 8px; }
 
@@ -298,7 +303,7 @@ h6, .h6 {
   margin-left: 16px;
   margin-right: 16px; }
 
-.my-md, hr, p, .m-y, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .m-x {
+.my-md, hr, p, .menu, .m-y, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .m-x {
   margin-bottom: 16px;
   margin-top: 16px; }
 
@@ -426,7 +431,7 @@ h6, .h6 {
 .pb-rm {
   padding-bottom: 0px; }
 
-.pl-rm {
+.menu, .pl-rm {
   padding-left: 0px; }
 
 .p-rm {

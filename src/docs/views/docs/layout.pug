@@ -1,12 +1,12 @@
 extends ../../layout
 
 block content
-  .flex.flex-wrap
-    div.p
-      ul.w-sm
+  .container.flex.flex-wrap
+    .p.w-sm
+      ul.menu
         li: a(href="buttons.html") Buttons
         li: a(href="text.html") Text
-    div.p.flex-1
-      div.w-1
+    .p.flex-1
+      .w-1
         h1= title
         block main
