@@ -46,8 +46,16 @@
 }
 
 // Childs
-@for $i from 1 through 4 {
-  .child-w-#{$i}-5 {
-    @extend %width-#{$i}-5;
+.child-w-1 {
+  & > * {
+    @extend %width-1;
+  }
+}
+
+@for $i from 1 through 5 {
+  .child-w-1-#{$i} {
+    & > * {
+      @extend %width-1-#{$i};
+    }
   }
 }

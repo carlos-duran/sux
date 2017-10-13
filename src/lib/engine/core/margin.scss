@@ -14,7 +14,7 @@ $margin-sizes: (
   $margin-value: 0;
 
   @if $size == 'auto' {
-    $margin-value: $value;
+    $margin-value: unquote($value);
   } @else {
     $margin-value: $margin-base * $value;
   }
