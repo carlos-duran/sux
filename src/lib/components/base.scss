@@ -40,6 +40,11 @@ p {
   @extend %margin-vertical;
 }
 
+pre {
+  @extend %max-width-1;
+  overflow: auto;
+}
+
 button {
   background-color: $white;
   border: 0;

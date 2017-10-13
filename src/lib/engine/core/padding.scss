@@ -50,5 +50,5 @@ $padding-sizes: (
 }
 
 %padding-horizontal {
-  @extend %padding-vertical-medium;
+  @extend %padding-horizontal-medium;
 }

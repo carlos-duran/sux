@@ -1,0 +1,14 @@
+mixin demo(name)
+  - var html = readDemo(name)
+  if html
+    //- .flex
+    //-   button.btn.black Demo
+    //-   button.btn.default Code
+    .switcher
+      != html
+      pre.px.py-sm.muted: code= html
+
+mixin section(id, title)
+  h3.t-primary(id=id)= title
+  block
+  +demo(id)

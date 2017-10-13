@@ -1,3 +1,5 @@
+const read = require('fs').readFileSync
+const join = require('path').join
 const gulp = require('gulp')
 const rename = require('gulp-rename')
 const gutil = require('gulp-util')
@@ -68,7 +70,17 @@ gulp.task('lib', ['lib:scss', 'lib:css'])
 
 // Docs
 
+function readDemo (name) {
+  try {
+    return read(join(__dirname, `src/docs/demos/${name}.html`), 'utf8')
+  } catch (e) {
+    console.log('Archivo ' + name + ' no encontrado.')
+    return ''
+  }
+}
+
 function docsPug (data) {
+  Object.assign(data, { readDemo })
   return gulp.src(docs.pug.src)
     .pipe(pug({ pretty: true, data }).on('error', gutil.log))
     .pipe(gulp.dest(docs.pug.dest))

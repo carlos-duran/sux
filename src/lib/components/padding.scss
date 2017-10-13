@@ -34,7 +34,7 @@ $padding-size-names: map-merge($size-names, $other-size-names);
 }
 
 @each $position, $pos in $other-positions {
-  .p-#{$pos} {
+  .p#{$pos} {
     @extend %padding-#{$position};
   }
 }
