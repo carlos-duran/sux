@@ -1,16 +1,18 @@
 - var name = 'Simple UX'
 - var min = prod ? '.min' : ''
+- var base = prod ? '/sux/' : '/'
 block config
 
 doctype html
 html
   head
+    base(href=base)
     meta(charset='utf-8')
     title= title ? `${title} | ${name}` : name
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css")
-    link(rel='stylesheet' href=`/css/sux${min}.css`)
-    link(rel='stylesheet' href=`/css/docs${min}.css`)
+    link(rel='stylesheet' href=`css/sux${min}.css`)
+    link(rel='stylesheet' href=`css/docs${min}.css`)
   body.flex.flex-column.min-h-v
     include includes/header.pug
     .flex-1.w-1
