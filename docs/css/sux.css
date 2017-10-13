@@ -12,7 +12,7 @@ body {
 
 hr {
   border: 0;
-  border-bottom: 1px solid #343a40; }
+  border-bottom: 1px solid #868e96; }
 
 a {
   color: inherit; }
@@ -309,7 +309,7 @@ pre, .max-w-1,
   margin-left: 16px;
   margin-right: 16px; }
 
-.my-md, hr, p, .menu, .m-y, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+.my-md, p, .menu, .m-y, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-bottom: 16px;
   margin-top: 16px; }
 
@@ -332,7 +332,7 @@ pre, .max-w-1,
   margin-left: 32px;
   margin-right: 32px; }
 
-.my-lg {
+hr, .my-lg {
   margin-bottom: 32px;
   margin-top: 32px; }
 

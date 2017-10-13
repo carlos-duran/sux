@@ -6,6 +6,7 @@
     <title>Text | Simple UX</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
     <link rel="stylesheet" href="css/sux.min.css">
     <link rel="stylesheet" href="css/docs.min.css">
   </head>
@@ -27,19 +28,19 @@
         <div class="flex-1 w-1">
           <div class="p w-1">
             <h1>Text</h1>
-            <h3 class="t-primary" id="text">Paragraph</h3>
-            <p>Utilizado para bloques de texto.</p>
+            <h3 class="t-primary" id="paragraph">Paragraph</h3>
             <div class="switcher"><p>
   Lorem ipsum dolor.
 </p>
 
-              <pre class="px py-sm muted"><code>&lt;p&gt;
+              <div class="t-sm mb-sm t-gray">Code:</div>
+              <pre class="mt-sm muted"><code class="p html">&lt;p&gt;
   Lorem ipsum dolor.
 &lt;/p&gt;
 </code></pre>
             </div>
+            <hr>
             <h3 class="t-primary" id="headings">Headings</h3>
-            <p>Cabeceras</p>
             <div class="switcher"><h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
@@ -47,7 +48,8 @@
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>
 
-              <pre class="px py-sm muted"><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+              <div class="t-sm mb-sm t-gray">Code:</div>
+              <pre class="mt-sm muted"><code class="p html">&lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
 &lt;h3&gt;Heading 3&lt;/h3&gt;
 &lt;h4&gt;Heading 4&lt;/h4&gt;
@@ -55,16 +57,30 @@
 &lt;h6&gt;Heading 6&lt;/h6&gt;
 </code></pre>
             </div>
+            <hr>
             <h3 class="t-primary" id="text-sizes">Text sizes</h3>
             <div class="switcher"><p class="t-sm">Lorem ipsum dolor sit amet.</p>
 <p class="t-md">Lorem ipsum dolor sit amet.</p>
 <p class="t-lg">Lorem ipsum dolor sit amet.</p>
 <p class="t-xl">Lorem ipsum dolor sit amet.</p>
 
-              <pre class="px py-sm muted"><code>&lt;p class=&quot;t-sm&quot;&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+              <div class="t-sm mb-sm t-gray">Code:</div>
+              <pre class="mt-sm muted"><code class="p html">&lt;p class=&quot;t-sm&quot;&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
 &lt;p class=&quot;t-md&quot;&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
 &lt;p class=&quot;t-lg&quot;&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
 &lt;p class=&quot;t-xl&quot;&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+</code></pre>
+            </div>
+            <hr>
+            <h3 class="t-primary" id="weight">Font weights</h3>
+            <div class="switcher"><p class="t-light">Lorem ipsum dolor sit amet.</p>
+<p class="t-regular">Lorem ipsum dolor sit amet.</p>
+<p class="t-bold">Lorem ipsum dolor sit amet.</p>
+
+              <div class="t-sm mb-sm t-gray">Code:</div>
+              <pre class="mt-sm muted"><code class="p html">&lt;p class=&quot;t-light&quot;&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;p class=&quot;t-regular&quot;&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;p class=&quot;t-bold&quot;&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
 </code></pre>
             </div>
           </div>
@@ -72,5 +88,8 @@
       </div>
     </div>
     <div class="black p-lg t-center">&copy; Simple UX</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/xml.min.js"></script>
+    <script>hljs.initHighlightingOnLoad()</script>
   </body>
 </html>

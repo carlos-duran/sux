@@ -4,11 +4,12 @@ block config
   - var title = 'Text'
 
 block main
-  
-  +section('text', 'Paragraph')
-    p Utilizado para bloques de texto.
-  
+  - var namespace = 'text'
+
+  +section('paragraph', 'Paragraph')
+  hr
   +section('headings', 'Headings')
-    p Cabeceras
-    
+  hr  
   +section('text-sizes', 'Text sizes')
+  hr
+  +section('weight', 'Font weights')
