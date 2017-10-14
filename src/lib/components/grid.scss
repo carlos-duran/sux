@@ -1,0 +1,14 @@
+$grid-margin: $unit * 4;
+
+.grid {
+  display: flex;
+  margin-left: -$grid-margin / 2;
+  margin-right: -$grid-margin / 2;
+
+  & > * {
+    margin-bottom: $grid-margin;
+    padding-left: $grid-margin / 2;
+    padding-right: $grid-margin / 2;
+  }
+
+}
