@@ -1,8 +1,12 @@
 extends layout
 
 block config
-  - var title = 'Buttons'
+  - var title = 'Button'
 
 block main
-  p.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+  - var namespace = 'button'
+  +section('types', 'Types')
+  +section('colors', 'Colors')
+  +section('sizes', 'Sizes')
+  +section('disabled', 'Disabled')
+  

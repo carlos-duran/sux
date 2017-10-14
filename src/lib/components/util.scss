@@ -5,6 +5,10 @@
   max-width: 1000px;
 }
 
+.link-reset {
+  @extend %link-reset;
+}
+
 .h-1-1,
 .h-1 {
   @extend %height-1-1;

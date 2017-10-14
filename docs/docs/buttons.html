@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <base href="/sux/">
+    <base href="/">
     <meta charset="utf-8">
-    <title>Buttons | Simple UX</title>
+    <title>Button | Simple UX</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
-    <link rel="stylesheet" href="css/sux.min.css">
-    <link rel="stylesheet" href="css/docs.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <link rel="stylesheet" href="css/sux.css">
+    <link rel="stylesheet" href="css/docs.css">
   </head>
   <body class="flex flex-column min-h-v child-w-1">
     <div class="primary">
@@ -27,8 +27,89 @@
         </div>
         <div class="flex-1 w-1">
           <div class="p w-1">
-            <h1>Buttons</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            <h1 class="t-primary">Button</h1>
+            <hr id="types"/>
+            <h3><a class="t-secondary link-reset" href="#types">Types</a></h3>
+            <div class="switcher">
+              <div class="t-sm mb-sm t-gray">Demo:</div>
+              <div class="mt-sm mb"><a class="btn">Link</a>
+<button class="btn">Button</button>
+<input type="button" value="Input" class="btn">
+<input type="submit" value="Submit" class="btn">
+</div>
+              <div class="t-sm mb-sm t-gray">Code:</div>
+              <pre class="mt-sm muted"><code class="p html">&lt;a class=&quot;btn&quot;&gt;Link&lt;/a&gt;
+&lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+&lt;input type=&quot;button&quot; value=&quot;Input&quot; class=&quot;btn&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Submit&quot; class=&quot;btn&quot;&gt;
+</code></pre>
+            </div>
+            <hr id="colors"/>
+            <h3><a class="t-secondary link-reset" href="#colors">Colors</a></h3>
+            <div class="switcher">
+              <div class="t-sm mb-sm t-gray">Demo:</div>
+              <div class="mt-sm mb"><div class="my">
+  <button class="btn">Button</button>
+  <button class="btn primary">Button</button>
+  <button class="btn secondary">Button</button>
+</div>
+<div class="my">
+  <button class="btn black">Button</button>
+  <button class="btn gray">Button</button>
+  <button class="btn muted">Button</button>
+  <button class="btn white">Button</button>
+</div>
+<div class="my">
+  <button class="btn info">Button</button>
+  <button class="btn success">Button</button>
+  <button class="btn warning">Button</button>
+  <button class="btn danger">Button</button>
+</div>
+</div>
+              <div class="t-sm mb-sm t-gray">Code:</div>
+              <pre class="mt-sm muted"><code class="p html">&lt;div class=&quot;my&quot;&gt;
+  &lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+  &lt;button class=&quot;btn primary&quot;&gt;Button&lt;/button&gt;
+  &lt;button class=&quot;btn secondary&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;my&quot;&gt;
+  &lt;button class=&quot;btn black&quot;&gt;Button&lt;/button&gt;
+  &lt;button class=&quot;btn gray&quot;&gt;Button&lt;/button&gt;
+  &lt;button class=&quot;btn muted&quot;&gt;Button&lt;/button&gt;
+  &lt;button class=&quot;btn white&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;my&quot;&gt;
+  &lt;button class=&quot;btn info&quot;&gt;Button&lt;/button&gt;
+  &lt;button class=&quot;btn success&quot;&gt;Button&lt;/button&gt;
+  &lt;button class=&quot;btn warning&quot;&gt;Button&lt;/button&gt;
+  &lt;button class=&quot;btn danger&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+            </div>
+            <hr id="sizes"/>
+            <h3><a class="t-secondary link-reset" href="#sizes">Sizes</a></h3>
+            <div class="switcher">
+              <div class="t-sm mb-sm t-gray">Demo:</div>
+              <div class="mt-sm mb"><button class="btn-sm">Small</button>
+<button class="btn">Medium</button>
+<button class="btn-lg">Large</button>
+</div>
+              <div class="t-sm mb-sm t-gray">Code:</div>
+              <pre class="mt-sm muted"><code class="p html">&lt;button class=&quot;btn-sm&quot;&gt;Small&lt;/button&gt;
+&lt;button class=&quot;btn&quot;&gt;Medium&lt;/button&gt;
+&lt;button class=&quot;btn-lg&quot;&gt;Large&lt;/button&gt;
+</code></pre>
+            </div>
+            <hr id="disabled"/>
+            <h3><a class="t-secondary link-reset" href="#disabled">Disabled</a></h3>
+            <div class="switcher">
+              <div class="t-sm mb-sm t-gray">Demo:</div>
+              <div class="mt-sm mb"><button class="btn" disabled>Button</button>
+</div>
+              <div class="t-sm mb-sm t-gray">Code:</div>
+              <pre class="mt-sm muted"><code class="p html">&lt;button class=&quot;btn&quot; disabled&gt;Button&lt;/button&gt;
+</code></pre>
+            </div>
           </div>
         </div>
       </div>
