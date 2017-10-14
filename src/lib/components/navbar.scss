@@ -1,0 +1,29 @@
+$item-height: 64px;
+$item-padding: $unit * 3;
+
+%navbar-item {
+  display: inline-flex;
+  line-height: $item-height;
+  padding-left: $item-padding;
+  padding-right: $item-padding;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  .item {
+    @extend %navbar-item;
+  }
+
+  .menu {
+    display: inline-flex;
+    margin: 0;
+
+    a {
+      @extend %press;
+      @extend %navbar-item;
+    }
+  }
+}

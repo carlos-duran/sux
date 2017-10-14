@@ -1,0 +1,13 @@
+.list {
+  @extend %margin-vertical;
+  @extend %padding-left-remove;
+  list-style: none;
+
+  li {
+    @extend %margin-vertical-small;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

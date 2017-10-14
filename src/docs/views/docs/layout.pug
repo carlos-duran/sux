@@ -2,11 +2,10 @@ extends ../../layout
 
 block content
   .container.flex.flex-wrap
-    .p.w-sm
-      ul.menu
+    .p.w-md
+      ul.menu.muted
         li: a(href="docs/buttons.html") Buttons
         li: a(href="docs/text.html") Text
-    .flex-1.w-1
-      .p.w-1
-        h1.t-primary= title
-        block main
+    .flex-1.p.w-1
+      h1.t-primary= title
+      block main

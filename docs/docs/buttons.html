@@ -12,44 +12,45 @@
   </head>
   <body class="flex flex-column min-h-v child-w-1">
     <div class="primary">
-      <ul>
-        <li><a href=".">Inicio</a></li>
-        <li><a href="docs">Documentación</a></li>
-      </ul>
+      <div class="container navbar"><a class="item t-xl" href=".">Sux</a>
+        <ul class="menu">
+          <li><a href=".">Inicio</a></li>
+          <li><a href="docs">Documentation</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </div>
     </div>
     <div class="flex-1">
       <div class="container flex flex-wrap">
-        <div class="p w-sm">
-          <ul class="menu">
+        <div class="p w-md">
+          <ul class="menu muted">
             <li><a href="docs/buttons.html">Buttons</a></li>
             <li><a href="docs/text.html">Text</a></li>
           </ul>
         </div>
-        <div class="flex-1 w-1">
-          <div class="p w-1">
-            <h1 class="t-primary">Button</h1>
-            <hr id="types"/>
-            <h3><a class="t-secondary link-reset" href="#types">Types</a></h3>
-            <div class="switcher">
-              <div class="t-sm mb-sm t-gray">Demo:</div>
-              <div class="mt-sm mb"><a class="btn">Link</a>
+        <div class="flex-1 p w-1">
+          <h1 class="t-primary">Button</h1>
+          <hr id="types"/>
+          <h3><a class="t-secondary link-reset" href="#types">Types</a></h3>
+          <div class="switcher">
+            <div class="t-sm mb-sm t-gray">Demo:</div>
+            <div class="mt-sm mb"><a class="btn">Link</a>
 <button class="btn">Button</button>
 <input type="button" value="Input" class="btn">
 <input type="submit" value="Submit" class="btn">
 </div>
-              <div class="t-sm mb-sm t-gray">Code:</div>
-              <pre class="mt-sm muted"><code class="p html">&lt;a class=&quot;btn&quot;&gt;Link&lt;/a&gt;
+            <div class="t-sm mb-sm t-gray">Code:</div>
+            <pre class="mt-sm muted"><code class="p html">&lt;a class=&quot;btn&quot;&gt;Link&lt;/a&gt;
 &lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
 &lt;input type=&quot;button&quot; value=&quot;Input&quot; class=&quot;btn&quot;&gt;
 &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; class=&quot;btn&quot;&gt;
 </code></pre>
-            </div>
-            <hr id="colors"/>
-            <h3><a class="t-secondary link-reset" href="#colors">Colors</a></h3>
-            <div class="switcher">
-              <div class="t-sm mb-sm t-gray">Demo:</div>
-              <div class="mt-sm mb"><div class="my">
-  <button class="btn">Button</button>
+          </div>
+          <hr id="colors"/>
+          <h3><a class="t-secondary link-reset" href="#colors">Colors</a></h3>
+          <div class="switcher">
+            <div class="t-sm mb-sm t-gray">Demo:</div>
+            <div class="mt-sm mb"><div class="my">
   <button class="btn primary">Button</button>
   <button class="btn secondary">Button</button>
 </div>
@@ -66,9 +67,8 @@
   <button class="btn danger">Button</button>
 </div>
 </div>
-              <div class="t-sm mb-sm t-gray">Code:</div>
-              <pre class="mt-sm muted"><code class="p html">&lt;div class=&quot;my&quot;&gt;
-  &lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+            <div class="t-sm mb-sm t-gray">Code:</div>
+            <pre class="mt-sm muted"><code class="p html">&lt;div class=&quot;my&quot;&gt;
   &lt;button class=&quot;btn primary&quot;&gt;Button&lt;/button&gt;
   &lt;button class=&quot;btn secondary&quot;&gt;Button&lt;/button&gt;
 &lt;/div&gt;
@@ -85,31 +85,30 @@
   &lt;button class=&quot;btn danger&quot;&gt;Button&lt;/button&gt;
 &lt;/div&gt;
 </code></pre>
-            </div>
-            <hr id="sizes"/>
-            <h3><a class="t-secondary link-reset" href="#sizes">Sizes</a></h3>
-            <div class="switcher">
-              <div class="t-sm mb-sm t-gray">Demo:</div>
-              <div class="mt-sm mb"><button class="btn-sm">Small</button>
+          </div>
+          <hr id="sizes"/>
+          <h3><a class="t-secondary link-reset" href="#sizes">Sizes</a></h3>
+          <div class="switcher">
+            <div class="t-sm mb-sm t-gray">Demo:</div>
+            <div class="mt-sm mb"><button class="btn-sm">Small</button>
 <button class="btn">Medium</button>
 <button class="btn-lg">Large</button>
 </div>
-              <div class="t-sm mb-sm t-gray">Code:</div>
-              <pre class="mt-sm muted"><code class="p html">&lt;button class=&quot;btn-sm&quot;&gt;Small&lt;/button&gt;
+            <div class="t-sm mb-sm t-gray">Code:</div>
+            <pre class="mt-sm muted"><code class="p html">&lt;button class=&quot;btn-sm&quot;&gt;Small&lt;/button&gt;
 &lt;button class=&quot;btn&quot;&gt;Medium&lt;/button&gt;
 &lt;button class=&quot;btn-lg&quot;&gt;Large&lt;/button&gt;
 </code></pre>
-            </div>
-            <hr id="disabled"/>
-            <h3><a class="t-secondary link-reset" href="#disabled">Disabled</a></h3>
-            <div class="switcher">
-              <div class="t-sm mb-sm t-gray">Demo:</div>
-              <div class="mt-sm mb"><button class="btn" disabled>Button</button>
+          </div>
+          <hr id="disabled"/>
+          <h3><a class="t-secondary link-reset" href="#disabled">Disabled</a></h3>
+          <div class="switcher">
+            <div class="t-sm mb-sm t-gray">Demo:</div>
+            <div class="mt-sm mb"><button class="btn" disabled>Button</button>
 </div>
-              <div class="t-sm mb-sm t-gray">Code:</div>
-              <pre class="mt-sm muted"><code class="p html">&lt;button class=&quot;btn&quot; disabled&gt;Button&lt;/button&gt;
+            <div class="t-sm mb-sm t-gray">Code:</div>
+            <pre class="mt-sm muted"><code class="p html">&lt;button class=&quot;btn&quot; disabled&gt;Button&lt;/button&gt;
 </code></pre>
-            </div>
           </div>
         </div>
       </div>

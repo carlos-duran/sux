@@ -3,7 +3,19 @@ $btn-press-active: rgba($black, .24);
 $disabled: lighten($gray, 30%);
 $text-disabled: lighten($black, 30%);
 
+%press {
+  &:hover,
+  &:focus {
+    background-image: linear-gradient($btn-press-hover, $btn-press-hover);
+  }
+
+  &:active {
+    background-image: linear-gradient($btn-press-active, $btn-press-active);
+  }
+}
+
 %btn {
+  @extend %press;
   @extend %link-reset;
   background: $muted;
   border: 0;
@@ -17,15 +29,6 @@ $text-disabled: lighten($black, 30%);
 
   &:focus {
     outline: 0;
-  }
-
-  &:hover,
-  &:focus {
-    background-image: linear-gradient($btn-press-hover, $btn-press-hover);
-  }
-
-  &:active {
-    background-image: linear-gradient($btn-press-active, $btn-press-active);
   }
 
   &:disabled,

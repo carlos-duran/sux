@@ -1,13 +1,17 @@
+$item-padding: $unit * 3;
+
 .menu {
-  @extend %margin-vertical;
-  @extend %padding-left-remove;
+  // font-size: 20px;
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 
-  li {
-    @extend %margin-vertical-small;
-
-    a {
-      text-decoration: none;
-    }
+  a {
+    @extend %press;
+    display: block;
+    line-height: 2;
+    padding-left: $item-padding;
+    padding-right: $item-padding;
+    text-decoration: none;
   }
 }
