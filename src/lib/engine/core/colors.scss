@@ -1,6 +1,43 @@
+$range: 20;
+$rate: 10%;
+
 @each $key, $value in $colors {
   %background-#{$key} {
     background-color: $value;
+  }
+
+  @if lightness($value) < 50 + $range {
+    $lighten: lighten($value, $rate);
+
+    %background-#{$key}-light {
+      background-color: $lighten;
+    }
+
+    %#{$key}-light {
+      @extend %background-#{$key}-light;
+      @if (lightness($lighten) > 50 + $range) {
+        @extend %text-black;
+      } @else {
+        @extend %text-white;
+      }
+    }
+  }
+
+  @if lightness($value) > 50 - $range {
+    $darken: darken($value, $rate);
+
+    %background-#{$key}-dark {
+      background-color: $darken;
+    }
+
+    %#{$key}-dark {
+      @extend %background-#{$key}-dark;
+      @if (lightness($darken) > 50 + $range) {
+        @extend %text-black;
+      } @else {
+        @extend %text-white;
+      }
+    }
   }
 
   %text-#{$key} {
@@ -13,7 +50,7 @@
 
   %#{$key} {
     @extend %background-#{$key};
-    @if (lightness($value) > 60) {
+    @if (lightness($value) > 50 + $range) {
       @extend %text-black;
     } @else {
       @extend %text-white;

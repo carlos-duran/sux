@@ -3,4 +3,12 @@
   .bg-#{$color} {
     @extend %background-#{$color};
   }
+
+  .bg-#{$color}-light {
+    @extend %background-#{$color}-light !optional;
+  }
+
+  .bg-#{$color}-dark {
+    @extend %background-#{$color}-dark !optional;
+  }
 }

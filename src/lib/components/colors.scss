@@ -3,4 +3,12 @@
   .#{$color} {
     @extend %#{$color};
   }
+
+  .#{$color}-light {
+    @extend %#{$color}-light !optional;
+  }
+
+  .#{$color}-dark {
+    @extend %#{$color}-dark !optional;
+  }
 }
